@@ -1,5 +1,5 @@
 {
-  "name": "'",
+  "name": "'ReactJS-Webshop",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Marcus Simmesgård",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.15.0",
+    "body-parser": "latest",
     "express": "latest",
+    "mongodb-core": "latest",
     "mongoose": "latest",
     "nodemon": "latest",
     "path": "latest"

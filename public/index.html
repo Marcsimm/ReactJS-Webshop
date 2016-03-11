@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>React Cart</title>
+      <link rel="stylesheet" href="css/style.css"></link>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><link>
+   </head>
+   <body>
+
+     <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="#">ReactJs-Webshop</a>
+     </div>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+
+     </div><!-- /.navbar-collapse -->
+   </div><!-- /.container-fluid -->
+ </nav>
+
+     <div class="container" id="product-item">
+
+         <div id="products" class="row list-group">
+
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script type="text/jsx" src="scripts/components/product.js"></script>
+    <script type="text/jsx" src="scripts/components/productlist.js"></script>
+    <script type="text/jsx" src="scripts/components/cartdropdown.js"></script>
+
+    <script type="text/jsx">
+  React.render(<ProductsList url="http://localhost:3000/data"/>, document.getElementById('products'));
+    </script>
+    <script type="text/jsx">
+  React.render(<CartDropDown url="http://localhost:3000/cartdb"/>, document.getElementById('bs-example-navbar-collapse-1'));
+    </script>
+   </body>
+</html>

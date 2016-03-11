@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>React Cart</title>
+      <link rel="stylesheet" href="css/style.css"></link>
+			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"><link>
+   </head>
+   <body>
+
+     <div class="container">
+       <div class="row">
+           <div class="col-sm-12 col-md-10 col-md-offset-1" id="items">
+
+           </div>
+       </div>
+   </div>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		 <script type="text/jsx" src="scripts/components/carttable.js"></script>
+		 <script type="text/jsx">
+
+ React.render(<Carttable url="http://localhost:3000/cartdb"/>, document.getElementById('items'));
+		 </script>
+	</body>
+</html>
